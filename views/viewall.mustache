@@ -8,8 +8,10 @@
         {{> patternSectionSubtype }}
       {{/ patternSectionSubtype }}
       {{^ patternSectionSubtype }}
-        {{> patternSectionSubtype }}
         {{> patternSection }}
+        <script type="text/javascript">
+          {{{patternSection}}}
+        </script>
       {{/ patternSectionSubtype }}
     {{/ partials }}
   </div> <!--end #sg-patterns-->
