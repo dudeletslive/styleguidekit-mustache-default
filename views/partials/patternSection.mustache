@@ -1,8 +1,8 @@
 <section id="{{ patternPartial }}" class="styles">
   <div class="section-label">{{ patternName }}</div>
-  {{ patternData.patternDesc }}
-  {{ patternBreadcrumb }}
-  {{ patternBreadcrumb.patternSubtype }}
+  <div class="section-label">{{ patternType }}</div>
+  <div class="section-label">{{ patternSubtype }}</div>
+  <div class="section-label">{{# patternBreadcrumb }}{{ patternSubtype }}{{/ patternBreadcrumb }}</div>
   <div class="sg-pattern-example">
     {{{ patternPartialCode }}}
   </div>
