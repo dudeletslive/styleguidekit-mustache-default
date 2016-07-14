@@ -4,11 +4,12 @@
   <!-- Patterns -->
   <div id="sg-patterns">
     {{# partials }}
+
+      <script type="text/json" id="sg-pattern-data-{{patternSectionSubtype}}" class="sg-pattern-data">
+        {{{ partials }}}
+      </script>
       {{# patternSectionSubtype }}
         {{> patternSectionSubtype }}
-        <script type="text/json" id="sg-pattern-data-{{patternSectionSubtype}}" class="sg-pattern-data">
-          {{{ patternSectionSubtype }}}
-        </script>
       {{/ patternSectionSubtype }}
       {{^ patternSectionSubtype }}
         {{> patternSection }}
