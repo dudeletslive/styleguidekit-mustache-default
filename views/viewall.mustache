@@ -6,12 +6,12 @@
     {{# partials }}
       {{# patternSectionSubtype }}
         {{> patternSectionSubtype }}
+
+        <p>Test</p>
       {{/ patternSectionSubtype }}
       {{^ patternSectionSubtype }}
         {{> patternSection }}
-        <script type="text/javascript">
-          {{{patternSection}}}
-        </script>
+        <p>Testing</p>
       {{/ patternSectionSubtype }}
     {{/ partials }}
   </div> <!--end #sg-patterns-->
