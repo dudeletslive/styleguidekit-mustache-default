@@ -1,16 +1,5 @@
 <section id="{{ patternPartial }}" class="styles">
-  <div class="section-header">
-    <h1 class="pull-left">
-      {{ patternBreadcrumb.patternSubtype }}
-      {{# patternBreadcrumb }}{{ patternSubtype }}{{/ patternBreadcrumb}}
-      {{ patternName }}
-      {{# patternState }}
-        <span class="sg-pattern-state {{ . }}">{{ . }}</span>
-      {{/ patternState }}
-    </h3>
-    <div class="sg-pattern-breadcrumb">{{ patternBreadcrumb }}</div>
-    <a href="#" data-patternpartial="{{ patternPartial }}" title="View Pattern Info" id="sg-pattern-extra-toggle-{{patternPartial}}" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
-  </div>
+  <div class="section-label">{{ patternName }}</div>
   <div class="sg-pattern-extra" id="sg-pattern-extra-{{ patternPartial }}">
     
   </div>
