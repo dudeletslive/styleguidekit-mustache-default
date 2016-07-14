@@ -4,15 +4,14 @@
   <!-- Patterns -->
   <div id="sg-patterns">
     {{# partials }}
-
-      <script type="text/json" id="sg-pattern-data-{{patternSectionSubtype}}" class="sg-pattern-data">
-        {{{ partials }}}
-      </script>
       {{# patternSectionSubtype }}
         {{> patternSectionSubtype }}
       {{/ patternSectionSubtype }}
       {{^ patternSectionSubtype }}
         {{> patternSection }}
+        <script type="text/javascript">
+          {{{patternSection}}}
+        </script>
       {{/ patternSectionSubtype }}
     {{/ partials }}
   </div> <!--end #sg-patterns-->
