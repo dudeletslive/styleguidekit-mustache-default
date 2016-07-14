@@ -1,10 +1,10 @@
+{{ patternData.patternBreadcrumb.patternSubtype }}
 <section id="{{ patternPartial }}" class="styles">
   <div class="section-label">{{ patternName }}</div>
   <div class="sg-pattern-example">
     {{{ patternPartialCode }}}
   </div>
   <script type="text/json" id="sg-pattern-data-{{patternPartial}}" class="sg-pattern-data">
-    {{{ patternData.patternBreadcrumb }}}
-    var data = {{{patternData}}};
+    {{{ patternData }}}
   </script>
 </section><!--end .sg-pattern-->
