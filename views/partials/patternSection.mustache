@@ -2,6 +2,7 @@
   <div class="section-header">
     <h1 class="pull-left">
       {{ patternBreadcrumb.patternSubtype }}
+      {{# patternBreadcrumb }}{{ patternSubtype }}{{/ patternBreadcrumb}}
       {{ patternName }}
       {{# patternState }}
         <span class="sg-pattern-state {{ . }}">{{ . }}</span>
